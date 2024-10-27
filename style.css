@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    background-color: #000000; /* Fondo negro */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+.container {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem; /* Tamaño de fuente grande */
+    margin: 20px 0;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+#subtitle {
+    font-size: 1.5rem; /* Tamaño de fuente del subtítulo */
+    margin: 10px 0;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Transición para el subtítulo */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+.arrow-buttons {
+    margin-top: 20px;
+}
+
+.arrow-button {
+    font-size: 3rem; /* Tamaño de las flechas */
+    background: none; /* Sin fondo */
+    border: none; /* Sin bordes */
+    color: #FFD700; /* Color dorado */
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.arrow-button:hover {
+    transform: scale(1.2); /* Zoom al pasar el mouse */
+    color: #FFFFFF; /* Cambia el color al pasar el mouse */
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; /* Fondo negro para todas las secciones */
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.5rem; /* Tamaño de fuente grande */
+    margin: 10px 0;
+    color: #FFD700; /* Color dorado */
+}
+
+p {
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    margin: 10px 0;
+    color: #FFFFFF; /* Texto blanco */
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #6A0C9A; /* Color morado */
+    border: none;
+    color: #FFFFFF; /* Texto blanco */
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive; /* Estilo de videojuego */
+    font-size: 1.5rem; /* Aumentar tamaño de botón */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFD700; /* Color dorado al pasar el mouse */
+    transform: scale(1.1); /* Pequeño zoom al pasar el mouse */
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.visible {
+    opacity: 1;
+    pointer-events: auto;
+    animation: fadeInButton 1s forwards;
+}
+
+@keyframes fadeInButton {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInLetterWithColor {
+    0% { opacity: 0; transform: translateY(-10px); color: #800080; }
+    100% { opacity: 1; transform: translateY(0); color: #ff69b4; }
+}
+
+/* Estilos para scroll horizontal */
+.horizontal-scroll {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; /* Fondo negro */
+    overflow: hidden; /* Evitar el overflow */
+}
+
+.scroll-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.scroll-item {
+    width: 300px; /* Ancho de los ítems */
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #6A0C9A; /* Color morado */
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Transición de zoom */
+}
+
+.scroll-item h2 {
+    margin: 0;
+    font-size: 2rem; /* Tamaño de fuente para encabezados */
+}
+
+.scroll-item p {
+    margin-top: 10px;
+}
+
+/* Zoom al pasar el mouse sobre los elementos */
+.scroll-item.zoom {
+    transform: scale(1.1); /* Aumenta el tamaño */
+}
+
+/* Estilos para los botones de scroll */
+.scroll-buttons {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.scroll-button {
+    background-color: #6A0C9A; /* Color morado */
+    border: none;
+    color: #FFFFFF; /* Texto blanco */
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-button:hover {
+    background-color: #FFD700; /* Color dorado al pasar el mouse */
+}
+
+/* Estilos para íconos de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: #FFFFFF; /* Color blanco para íconos */
+    font-size: 2rem; /* Tamaño de los íconos */
+    margin: 0 15px; /* Espaciado entre íconos */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FFD700; /* Cambia a dorado al pasar el mouse */
+}

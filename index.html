@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Tulio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+</head>
+<body>
+    <div class="container">
+        <h1 id="animated-name"></h1>
+        <h2 id="subtitle" class="hidden">Desarrollador de Software Full Stack</h2>
+        <div class="arrow-buttons">
+            <button id="up-arrow" class="arrow-button hidden" onclick="scrollToSection('sobre-mi')">&#8593;</button>
+        </div>
+    </div>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Soy Tulio Santiago Mendoza Mora, un apasionado del desarrollo de software.</p>
+        <div class="arrow-buttons">
+            <button class="arrow-button" onclick="scrollToSection('objetivos')">&#8595;</button>
+        </div>
+    </section>
+
+    <section id="objetivos">
+        <h2>Objetivos Profesionales</h2>
+        <p>Mi objetivo es convertirme en un desarrollador de software experto y contribuir a proyectos innovadores.</p>
+        <div class="arrow-buttons">
+            <button class="arrow-button" onclick="scrollToSection('mision-vision')">&#8595;</button>
+        </div>
+    </section>
+
+    <section id="mision-vision" class="horizontal-scroll">
+        <h2>Misión, Visión y Valores</h2>
+        <div class="scroll-container">
+            <div class="scroll-item" onmouseover="this.classList.add('zoom')" onmouseout="this.classList.remove('zoom')">
+                <h3>Misión</h3>
+                <p>Desarrollar software que haga la vida más fácil y accesible para todos.</p>
+            </div>
+            <div class="scroll-item" onmouseover="this.classList.add('zoom')" onmouseout="this.classList.remove('zoom')">
+                <h3>Visión</h3>
+                <p>Ser un referente en soluciones tecnológicas a nivel nacional e internacional.</p>
+            </div>
+            <div class="scroll-item" onmouseover="this.classList.add('zoom')" onmouseout="this.classList.remove('zoom')">
+                <h3>Valores</h3>
+                <p>Innovación, Compromiso, Creatividad, y Trabajo en Equipo.</p>
+            </div>
+        </div>
+        <div class="scroll-buttons">
+            <button class="scroll-button left" onclick="scrollHorizontally(-1)">◀</button>
+            <button class="scroll-button right" onclick="scrollHorizontally(1)">▶</button>
+        </div>
+        <div class="arrow-buttons">
+            <button class="arrow-button" onclick="scrollToSection('certificaciones')">&#8595;</button>
+        </div>
+    </section>
+
+    <section id="certificaciones">
+        <h2>Certificaciones</h2>
+        <p>Aquí puedes listar tus certificaciones.</p>
+        <div class="arrow-buttons">
+            <button class="arrow-button" onclick="scrollToSection('servicios')">&#8595;</button>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <p>Ofrezco desarrollo web, aplicaciones móviles y más.</p>
+        <div class="arrow-buttons">
+            <button class="arrow-button" onclick="scrollToSection('proyectos')">&#8595;</button>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <p>Aquí puedes mostrar tus proyectos destacados.</p>
+        <div class="arrow-buttons">
+            <button class="arrow-button" onclick="scrollToSection('contacto')">&#8595;</button>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Datos de Contacto</h2>
+        <p>Email: tulio@example.com</p>
+        <div class="social-icons">
+            <a href="https://github.com/tulio" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/tulio" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="arrow-buttons">
+            <button class="arrow-button" onclick="scrollToSection('sobre-mi')">&#8595;</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
