@@ -10,57 +10,68 @@
 </head>
 <body>
     <div class="container">
-        <h1 id="animated-name"></h1>
+        <h1 id="animated-name">Tulio Santiago Mendoza Mora</h1>
         <h2 id="subtitle" class="hidden">Desarrollador de Software Full Stack</h2>
         <div class="arrow-buttons">
-            <button id="up-arrow" class="arrow-button hidden" onclick="scrollToSection('sobre-mi')">&#8593;</button>
+            <button id="up-arrow" class="arrow-button hidden" onclick="scrollToSection('sobre-mi')">&#8595;</button>
         </div>
     </div>
 
     <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>Soy Tulio Santiago Mendoza Mora, un apasionado del desarrollo de software.</p>
+        <h2>Sobre mi</h2>
+        <img src="./images/persinfon.png" alt="Sobre mí" class="sobre-mi-image"> 
+        <div class="text-box">
+            <p>¡Hola! Soy Tulio Santiago Mendoza Mora, estudiante en Campuslands, un centro especializado en desarrollo de software y programación. Desde pequeño, la tecnología ha sido una pasión para mí, y me considero alguien con una gran capacidad para adaptarme a los cambios rápidos en el mundo tecnológico. Aunque soy una persona tímida, tengo habilidades sólidas para el trabajo en equipo y me considero muy proactivo, siempre buscando aprender y mejorar en cada proyecto en el que participo.</p>
+        </div>
+       
         <div class="arrow-buttons">
             <button class="arrow-button" onclick="scrollToSection('objetivos')">&#8595;</button>
         </div>
     </section>
 
     <section id="objetivos">
-        <h2>Objetivos Profesionales</h2>
-        <p>Mi objetivo es convertirme en un desarrollador de software experto y contribuir a proyectos innovadores.</p>
+        <h2>Objetivos</h2>
+        <div class="text-box">
+            <p>Mi objetivo principal es convertirme en un desarrollador de software competente y versátil, capaz de abordar diferentes desafíos en el ámbito tecnológico. Busco constantemente aprender nuevas tecnologías y mejorar mis habilidades en programación.</p>
+        </div>
+        <img src="se" alt="Objetivos" class="objetivos-image">
         <div class="arrow-buttons">
             <button class="arrow-button" onclick="scrollToSection('mision-vision')">&#8595;</button>
         </div>
     </section>
+    
 
-    <section id="mision-vision" class="horizontal-scroll">
+    <section id="mision-vision">
         <h2>Misión, Visión y Valores</h2>
-        <div class="scroll-container">
-            <div class="scroll-item" onmouseover="this.classList.add('zoom')" onmouseout="this.classList.remove('zoom')">
+        <div class="mision-vision-container">
+            <div class="mision-vision-box">
                 <h3>Misión</h3>
-                <p>Desarrollar software que haga la vida más fácil y accesible para todos.</p>
+                <p>Ofrecer soluciones tecnológicas de alta calidad, caracterizadas por innovación y eficiencia, que ayuden a transformar las ideas de los clientes en realidades prácticas y útiles.</p>
             </div>
-            <div class="scroll-item" onmouseover="this.classList.add('zoom')" onmouseout="this.classList.remove('zoom')">
+            <div class="mision-vision-box">
                 <h3>Visión</h3>
-                <p>Ser un referente en soluciones tecnológicas a nivel nacional e internacional.</p>
+                <p>Convertirme en un desarrollador de referencia en la industria tecnológica, reconocido por mi habilidad para trabajar en equipo, mi ética de trabajo, y mi compromiso con el crecimiento personal y profesional.</p>
             </div>
-            <div class="scroll-item" onmouseover="this.classList.add('zoom')" onmouseout="this.classList.remove('zoom')">
+            <div class="mision-vision-box">
                 <h3>Valores</h3>
-                <p>Innovación, Compromiso, Creatividad, y Trabajo en Equipo.</p>
+                <ul>
+                    <li>Trabajo en equipo: Creo en la sinergia que se produce cuando las personas colaboran en un proyecto común.</li>
+                    <li>Responsabilidad: Cumplo con mis compromisos y me esfuerzo por superar las expectativas en cada proyecto.</li>
+                    <li>Innovación: Busco constantemente aprender y aplicar las nuevas tendencias y tecnologías en el desarrollo de software.</li>
+                    <li>Proactividad: No espero que las soluciones lleguen; soy quien las busca y las implementa.</li>
+                </ul>
             </div>
-        </div>
-        <div class="scroll-buttons">
-            <button class="scroll-button left" onclick="scrollHorizontally(-1)">◀</button>
-            <button class="scroll-button right" onclick="scrollHorizontally(1)">▶</button>
         </div>
         <div class="arrow-buttons">
             <button class="arrow-button" onclick="scrollToSection('certificaciones')">&#8595;</button>
         </div>
     </section>
+    
 
     <section id="certificaciones">
         <h2>Certificaciones</h2>
-        <p>Aquí puedes listar tus certificaciones.</p>
+        <p>Certificación en Desarrollo Web – Campuslands (En progreso)</p>
+        <p>Introducción a la Programación – Plataforma [Indica la plataforma, si aplica]</p>
         <div class="arrow-buttons">
             <button class="arrow-button" onclick="scrollToSection('servicios')">&#8595;</button>
         </div>
@@ -68,7 +79,11 @@
 
     <section id="servicios">
         <h2>Servicios</h2>
-        <p>Ofrezco desarrollo web, aplicaciones móviles y más.</p>
+        <ul>
+            <li>Desarrollo de Aplicaciones Web: Diseño y desarrollo de aplicaciones con una interfaz amigable y funcional.</li>
+            <li>Optimización de Código: Mejora en la eficiencia de aplicaciones existentes.</li>
+            <li>Soluciones Personalizadas: Creación de herramientas de software adaptadas a las necesidades del cliente.</li>
+        </ul>
         <div class="arrow-buttons">
             <button class="arrow-button" onclick="scrollToSection('proyectos')">&#8595;</button>
         </div>
@@ -76,21 +91,26 @@
 
     <section id="proyectos">
         <h2>Proyectos</h2>
-        <p>Aquí puedes mostrar tus proyectos destacados.</p>
+        <div class="text-box">
+            <p>He trabajado en varios proyectos que abarcan desde aplicaciones web hasta sistemas de gestión. Cada proyecto ha sido una oportunidad para aplicar mis conocimientos y aprender de nuevas experiencias.</p>
+        </div>
+        <img src="ruta-de-tu-imagen-proyectos.jpg" alt="Proyectos" class="proyectos-image"> 
         <div class="arrow-buttons">
             <button class="arrow-button" onclick="scrollToSection('contacto')">&#8595;</button>
         </div>
     </section>
+    
 
     <section id="contacto">
         <h2>Datos de Contacto</h2>
-        <p>Email: tulio@example.com</p>
+        <p>Email: mendozasantiago53@gmail.com</p>
+        <p>Teléfono: 3134963906</p>
         <div class="social-icons">
-            <a href="https://github.com/tulio" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/tulio" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/TulioSMendoza" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/TulioSantiagoM" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
         <div class="arrow-buttons">
-            <button class="arrow-button" onclick="scrollToSection('sobre-mi')">&#8595;</button>
+            <button class="arrow-button" onclick="scrollToSection('animated-name')">&#8593;</button>
         </div>
     </section>
 

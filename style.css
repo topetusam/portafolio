@@ -22,6 +22,29 @@ body {
     align-items: center;
 }
 
+.text-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo con opacidad */
+    border: 2px solid #FFD700; /* Borde dorado */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Espaciado externo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    max-width: 800px; /* Ancho máximo del cuadro */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+/* Estilo para las imágenes */
+.sobre-mi-image,
+.objetivos-image,
+.proyectos-image,
+.contacto-image {
+    max-width: 80%; /* Ancho máximo al 80% del contenedor */
+    height: auto; /* Alto automático para mantener proporciones */
+    margin-top: 20px; /* Espaciado superior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
 h1 {
     font-size: 4rem; /* Tamaño de fuente grande */
     margin: 20px 0;
@@ -196,4 +219,42 @@ button:hover {
 
 .social-icons a:hover {
     color: #FFD700; /* Cambia a dorado al pasar el mouse */
+}
+
+/* Estilos para la sección Misión y Visión */
+#mision-vision {
+    background-color: #000000; /* Fondo negro para la sección */
+    padding: 40px; /* Espaciado interno */
+    text-align: center; /* Alinear texto al centro */
+}
+
+.mision-vision-container {
+    display: flex; /* Flexbox para los cuadros */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    gap: 20px; /* Espacio entre cuadros */
+    animation: slideIn 0.5s ease; /* Animación de entrada */
+}
+
+.mision-vision-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo con opacidad */
+    border: 2px solid #FFD700; /* Borde dorado */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 300px; /* Ancho de cada cuadro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    opacity: 0; /* Inicialmente oculto para la animación */
+    animation: fadeIn 0.5s forwards; /* Animación de aparición */
+    animation-delay: calc(var(--order) * 0.2s); /* Retraso en la animación */
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); }
+    to { transform: translateY(0); }
 }
